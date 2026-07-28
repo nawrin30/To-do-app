@@ -18,6 +18,33 @@ document.addEventListener('DOMContentLoaded', () => {
     setupEventListeners();
 });
 
+function setupEventListeners() {
+    todoForm.addEventListener('submit', handleAddTodo);
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+            currentFilter = e.target.dataset.filter;
+            renderTodos();
+        });
+    });
+
+    clearCompletedBtn.addEventListener('click', handleClearCompleted);
+}
+
+
+function handleAddTodo(e) {
+    e.preventDefault();
+    const text = todoInput.value.trim();
+    if (!text) return;
+
+    const newTodo = {
+        id: Date.now(),
+        text: text,
+        completed: false
+    };
+
 
 
 
