@@ -45,3 +45,22 @@ body {
     align-items: center;
     margin-bottom: 24px;
 }
+
+.app-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.app-header p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+.stats-badge {
+    background: #e0e7ff;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
