@@ -130,3 +130,35 @@ body {
     cursor: pointer;
     transition: var(--transition);
 }
+.tab-btn.active, .tab-btn:hover {
+    color: var(--primary-color);
+    background: #f1f5f9;
+}
+
+.task-list {
+    list-style: none;
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 8px;
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+
