@@ -106,3 +106,27 @@ body {
     cursor: pointer;
     transition: var(--transition);
 }
+.btn-primary:hover {
+    background: var(--primary-hover);
+}
+
+
+.filter-tabs {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+}
