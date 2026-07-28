@@ -11,3 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+<main class="app-card">
+        
+        <header class="app-header">
+            <div>
+                <h1>TaskMaster</h1>
+                <p>Manage your daily activities efficiently</p>
+            </div>
+            <div class="stats-badge">
+                <span id="completed-count">0</span>/<span id="total-count">0</span> Done
+            </div>
+        </header>
+<form id="todo-form" class="input-container">
+            <div class="input-wrapper">
+                <i class="fa-solid fa-plus input-icon"></i>
+                <input type="text" id="todo-input" placeholder="What needs to be done?" autocomplete="off" required>
+            </div>
+            <button type="submit" class="btn-primary">
