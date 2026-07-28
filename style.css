@@ -189,3 +189,27 @@ body {
     display: block;
 }
 
+.task-text {
+    font-size: 0.95rem;
+    word-break: break-all;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    opacity: 0;
+    padding: 6px;
+    transition: var(--transition);
+}
+
+.task-item:hover .delete-btn {
+    opacity: 1;
+}
