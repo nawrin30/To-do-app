@@ -162,3 +162,30 @@ body {
 }
 
 
+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.task-item.completed .custom-checkbox {
+    background: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.custom-checkbox i {
+    color: #fff;
+    font-size: 0.7rem;
+    display: none;
+}
+
+.task-item.completed .custom-checkbox i {
+    display: block;
+}
+
